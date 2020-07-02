@@ -2,6 +2,32 @@
     General Styles
 */
 body{
-    background-color: green
+    background-color: white;
 }
 
+.navbar img{
+    height: 100px;
+    width:100px ;
+}
+.entry-button{
+    background-color: orangered;
+    color: white;
+    margin-right: 100px;
+    height: 5px;
+}
+.contactanos{
+    margin-right: 100px;
+}
+.contactanos, .listocare, .productos{
+    margin: 0 5px 0 5px;
+    border: transparent;
+
+}
+div{
+    border: 1px solid grey;
+
+}
+.consultorio{
+    background-color: red;
+
+}
