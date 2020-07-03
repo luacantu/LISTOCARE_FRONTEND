@@ -11,15 +11,15 @@ export const Navbar = () => {
 					<span className="entry-button">INGRESA AQUI</span>
 				</Link>
 				<Link to="/demo">
-					<button className="productos">productos</button>
+					<button className="productos">Productos</button>
 				</Link>
 
 				<Link to="/demo">
-					<button className="listocare">que es listocare</button>
+					<button className="listocare">Que es Listocare</button>
 				</Link>
 
 				<Link to="/demo">
-					<button className="contactanos">contactanos</button>
+					<button className="contactanos">Contactanos</button>
 				</Link>
 			</div>
 		</nav>

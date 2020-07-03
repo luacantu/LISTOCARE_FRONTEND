@@ -26,7 +26,30 @@ export const Layout = () => {
 						<Route exact path="/new_visitor" component={new_visitor} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
-						<Route render={() => <h1>Not found!</h1>} />
+						<Route
+							render={() => (
+								<div className="div.a">
+									<img
+										id="mypic"
+										src="https://st4.depositphotos.com/22536472/27266/v/600/depositphotos_272665200-stock-video-blue-pyramids-black-background-connection.jpg"
+									/>
+									<h1 className=" parrafo_superior">
+										<p>tu consultorio virtual durante la pandemia covid-19</p>
+									</h1>
+									<div className="p2">
+										<p>
+											<h2>
+												Listocare lo ayuda a brindar una exelente atencion al paciente mientras
+												desarrolla una practica saludable.
+											</h2>
+										</p>
+									</div>
+									<div className="Registrate">
+										<button>Registrate</button>
+									</div>
+								</div>
+							)}
+						/>
 					</Switch>
 					<Footer />
 				</ScrollToTop>

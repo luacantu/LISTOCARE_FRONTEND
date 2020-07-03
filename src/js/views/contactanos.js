@@ -5,6 +5,7 @@ export const Contactanos = () => {
 <div className="text-center mt-5">
 
     <div>
+        
         <div>
         <h1>Contactanos</h1>
         </div>

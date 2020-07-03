@@ -8,9 +8,10 @@ body{
 .navbar img{
     height: 100px;
     width:100px ;
+    background-color:white;
 }
 .entry-button{
-    background-color: orangered;
+    background-color: red;
     color: white;
     margin-right: 100px;
     height: 5px;
@@ -30,4 +31,36 @@ div{
 .consultorio{
     background-color: red;
 
+}
+.parrafo_superior{
+    background-color:transparent;
+    color: grey;
+    text-align: left;
+}
+div.a{
+    text-align: left;
+}
+#mypic{
+    position: absolute;
+right: 0%;
+background-color:white;
+bottom:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.p2{
+    text-align:left;
+    color:grey;
+    margin-right: 800px;
+
+}
+.Registrate{
+    text-align: center;
+    margin-right: 1000px;
+    background-color: red;
+    color: white;
+    height: 20px;
+    
 }
