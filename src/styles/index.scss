@@ -7,7 +7,7 @@ body{
 
 .navbar img{
     height: 100px;
-    width:100px ;
+    width:130px ;
     background-color:white;
 }
 .entry-button{
@@ -24,43 +24,12 @@ body{
     border: transparent;
 
 }
-div{
-    border: 1px solid grey;
-
+.card-title{
+     font-size:80px;
+     color:grey;
 }
-.consultorio{
-    background-color: red;
-
-}
-.parrafo_superior{
-    background-color:transparent;
-    color: grey;
-    text-align: left;
-}
-div.a{
-    text-align: left;
-}
-#mypic{
-    position: absolute;
-right: 0%;
-background-color:white;
-bottom:10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.p2{
-    text-align:left;
+.card-text{
+    font-size: 30px;
     color:grey;
-    margin-right: 800px;
-
-}
-.Registrate{
-    text-align: center;
-    margin-right: 1000px;
-    background-color: red;
-    color: white;
-    height: 20px;
-    
+    margin-right: 600px;
 }
