@@ -9,6 +9,7 @@ body{
     height: 100px;
     width:130px ;
     background-color:white;
+    border:2px red;
 }
 .entry-button{
     background-color: red;
@@ -28,6 +29,7 @@ body{
 .card-title{
      font-size:80px;
      color:grey;
+     border:transparent;
 }
 .card-text{
     font-size: 30px;
@@ -37,18 +39,39 @@ body{
 .Registrate{
     background-color: red;
     color:white;
-    margin-left: 200px;
+    margin-left: 300px;
+    transform:translate(-50%,-100%);
+     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    top:72%;
+    padding: 10px 45px;
 }
 .phone{
-    height: 50rem;
-    width: 20rem;
+    height: 40rem;
+    width: 200rem;
     background-color: transparent;
-    background-image: url("https://images.cellphonerepair.com/wp-content/uploads/2016/08/resource-center-cover.png");
+    background-image: url("https://files.slack.com/files-pri/T0BFXMWMV-F016T2Y4QD9/image_from_ios.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     position:absolute;
     top:100%;
-    right:0;
+    // right:0;
+    margin-left: 1250px;
     transform:translate(-50%,-100%);
+}
+.lastdiv{
+    background-color:blue;
+    margin-right:1000px;
+    top:50%;
+}
+.miniparag{
+    margin-right: 1000px;
+    color:grey;
+}
+
+.info-p{
+    color:darkgrey;
 }

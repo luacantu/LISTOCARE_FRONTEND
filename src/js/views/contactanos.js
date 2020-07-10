@@ -13,7 +13,7 @@ export const Contactanos = () => {
 					<h5 className="card-title">Tu consultorio virtual durante la pandemia covid-19</h5>
 					<p className="card-text">
 						Listocare lo ayuda a brindar una exelente atencion al paiente mientras desarrolla una practica
-						saludable..
+						saludable.
 					</p>
 					<p className="card-text">
 						<button className="Registrate">Registrate</button>
@@ -21,6 +21,16 @@ export const Contactanos = () => {
 				</div>
 			</div>
 			<div className="phone" />
+			<div className="lastdiv" />
+			<p className="info-p">
+				<h1>Contactanos</h1>
+			</p>
+			<p className="miniparag">
+				<h5>
+					La tecnologia es el corazon de nuestro trabajo,nuestro compromiso hacer la atencion medica mas
+					accesible
+				</h5>
+			</p>
 		</div>
 	);
 };
