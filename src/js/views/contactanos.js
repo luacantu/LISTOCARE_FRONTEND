@@ -26,11 +26,26 @@ export const Contactanos = () => {
 				<h1>Contactanos</h1>
 			</p>
 			<p className="miniparag">
-				<h5>
+				<h2>
 					La tecnologia es el corazon de nuestro trabajo,nuestro compromiso hacer la atencion medica mas
 					accesible
-				</h5>
+				</h2>
 			</p>
+			<table className="table">
+				<tr>
+					<td className="EMAIL">
+						EMAIL :<td />
+						<input type="text" email="" />
+					</td>
+				</tr>
+				<tr>
+					<td className="Last_name">Last Name :</td>
+					<td>
+						<input type="text" last_name="" />
+					</td>
+				</tr>
+			</table>
+			<button className="Submit">Submit</button>
 		</div>
 	);
 };

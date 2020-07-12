@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light mb-3">
-			<img src="https://files.slack.com/files-pri/T0BFXMWMV-F0166GYAA5A/image_from_ios.png" />
+			<img src="https://files.slack.com/files-pri/T0BFXMWMV-F01634B3M7Z/image.png" />
 
 			<div className="ml-auto">
 				<Link to="/">

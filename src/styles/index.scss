@@ -6,8 +6,8 @@ body{
 }
 
 .navbar img{
-    height: 100px;
-    width:130px ;
+    height: 110px;
+    width:245px ;
     background-color:white;
     border:2px red;
 }
@@ -57,7 +57,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     position:absolute;
-    top:100%;
+    top:70;
     // right:0;
     margin-left: 1250px;
     transform:translate(-50%,-100%);
@@ -68,10 +68,33 @@ body{
     top:50%;
 }
 .miniparag{
-    margin-right: 1000px;
-    color:grey;
+    margin-right: 600px;
+    color:lightblue;
 }
 
 .info-p{
     color:darkgrey;
+}
+.table{
+    margin-left: 1000px;
+}
+
+   
+.Last_name{
+    // margin-left: 1000px;
+    color:red;
+    size: 5px;
+    border: 2px;
+    margin-right:200px;
+}
+.EMAIL{
+// margin-left: 1000px;
+color: red;
+size: 10px;
+border: 2px;
+}
+.Submit{
+    margin-left: 1020px;
+    background-color: red;
+    color: white;
 }
