@@ -2,6 +2,7 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Contactanos } from "./contactanos";
+import { Createacount } from "./Createacount";
 
 export const Home = () => {
 	return (
