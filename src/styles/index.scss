@@ -50,7 +50,7 @@ body{
 }
 .phone{
     height: 40rem;
-    width: 200rem;
+    width: 800px;
     background-color: transparent;
     background-image: url("https://files.slack.com/files-pri/T0BFXMWMV-F016T2Y4QD9/image_from_ios.png");
     background-position: center;
@@ -74,9 +74,11 @@ body{
 
 .info-p{
     color:darkgrey;
+
 }
 .table{
-    margin-left: 1000px;
+    margin-left: 10px;
+    width:50%;
 }
 
    
@@ -86,15 +88,60 @@ body{
     size: 5px;
     border: 2px;
     margin-right:200px;
+    display:block;
+    
 }
+.last_name_input{
+    display:block;
+    margin-left: 10px;
+}
+
+
+
+
 .EMAIL{
 // margin-left: 1000px;
 color: red;
 size: 10px;
 border: 2px;
+top:80px;
 }
 .Submit{
-    margin-left: 1020px;
+    margin-left: 1160px;
     background-color: red;
     color: white;
+    display:flex;
+}
+.contactanos-parent{
+    display: flex;
+}
+
+.background-img {
+    background-image:url("https://files.123freevectors.com/wp-content/original/130970-blue-and-white-polygon-background.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+    
+.card{
+    background:transparent;
+}
+.login-form input{
+    border-radius: 15px;
+    width:200px;
+    border: 2px solid darkgrey;
+    box-shadow: 2px 3px 10px lightgrey;
+
+}
+
+
+
+.b-login{
+    background-position: center;
+}
+.login-page{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+    top: 400px;
 }

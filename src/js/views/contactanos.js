@@ -22,29 +22,32 @@ export const Contactanos = () => {
 			</div>
 			<div className="phone" />
 			<div className="lastdiv" />
-			<p className="info-p">
-				<h1>Contactanos</h1>
-			</p>
-			<p className="miniparag">
-				<h2>
-					La tecnologia es el corazon de nuestro trabajo,nuestro compromiso hacer la atencion medica mas
-					accesible
-				</h2>
-			</p>
-			<table className="table">
-				<tr>
-					<td className="EMAIL">
-						EMAIL :<td />
-						<input type="text" email="" />
-					</td>
-				</tr>
-				<tr>
-					<td className="Last_name">Last Name :</td>
-					<td>
-						<input type="text" last_name="" />
-					</td>
-				</tr>
-			</table>
+			<div className="contactanos-parent">
+				<div className="left-side">
+					<p className="info-p">
+						<h1>Contactanos</h1>
+					</p>
+					<p className="miniparag">
+						<h2>
+							La tecnologia es el corazon de nuestro trabajo,nuestro compromiso hacer la atencion medica
+							mas accesible
+						</h2>
+					</p>
+				</div>
+				<table className="table">
+					<tr>
+						<td className="EMAIL">
+							EMAIL :<td />
+							<input type="text" email="" />
+						</td>
+					</tr>
+					<tr>
+						<td className="Last_name">Last Name :</td>
+
+						<input type="text" className="last_name_input" />
+					</tr>
+				</table>
+			</div>
 			<button className="Submit">Submit</button>
 		</div>
 	);
