@@ -11,6 +11,12 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { new_visitor } from "./views/new_visitor";
 import { Createacount } from "./views/Createacount";
+import { Log_in } from "./views/Log-in";
+import { Contactanos } from "./views/contactanos";
+import { Staff_info } from "./views/staff_info";
+import { Treatment } from "./views/treatment";
+import { Patients } from "./views/patients";
+import { Didagnostic } from "./views/diagnostic";
 
 //create your first component
 export const Layout = () => {
@@ -25,9 +31,16 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/new_visitor" component={new_visitor} />
-						<Route exact path="/" component={Home} />
-						<Route path="/sign_up" component={Createacount} />
-						<Route path="/single/:theid" component={Single} />
+						<Route exact path="/home" component={Home} />
+						<Route exact path="/sign_up" component={Createacount} />
+						<Route exact path="/sign_in" component={Log_in} />
+						<Route exact path="/single/:theid" component={Single} />
+						<Route exact path="/staff_info" component={Staff_info} />
+						<Route exact path="/treatment" component={Treatment} />
+						<Route exact path="/patients" component={Patients} />
+						<Route exact path="/Diagnostic" component={Didagnostic} />
+
+						<Route path="/" component={Contactanos} />
 						{/* <Route
 							render={() => (
 								<div className="div.a">
