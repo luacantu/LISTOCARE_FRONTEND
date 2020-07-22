@@ -42,7 +42,7 @@ export const Contactanos = () => {
 						</td>
 					</tr>
 					<tr>
-						<td className="Last_name">Last Name :</td>
+						<td className="Last_name">Comment :</td>
 
 						<input type="text" className="last_name_input" />
 					</tr>

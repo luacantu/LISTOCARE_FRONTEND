@@ -6,10 +6,13 @@ export const Createacount = () => {
 			<div className="login-page">
 				<div className="form">
 					<form className="login-form text-center">
+						<input type="text" placeholder="name" />
+						<input type="text" placeholder="Last name" />
 						<input type="text" placeholder="user name" />
 						<input type="text" placeholder="password" />
 						<input type="text" placeholder="email id" />
-						<button type="button" className="btn btn-primary btn-lg px-5 my-3">
+						<input type="text" placeholder="Badge number" />
+						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
 							create
 						</button>
 					</form>

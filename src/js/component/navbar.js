@@ -10,9 +10,9 @@ export const Navbar = () => {
 				<Link to="/">
 					<span className="entry-button">INGRESA AQUI</span>
 				</Link>
-				<Link to="/demo">
+				{/* <Link to="/demo">
 					<button className="productos">Productos</button>
-				</Link>
+				</Link> */}
 
 				<Link to="/demo">
 					<button className="listocare">Que es Listocare</button>

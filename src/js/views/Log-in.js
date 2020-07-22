@@ -2,13 +2,18 @@ import React from "react";
 
 export const Log_in = () => {
 	return (
-		<div className="log-in">
-			<div className="forms">
-				<form className="log forms">
-					<input type="text" placeholder="name" />
-					<input type="text" placeholder="password" />
-					<input type="text" placeholder="image" />
-				</form>
+		<div className="imagen_fondo">
+			<div className="pag ingreso">
+				<div className="form">
+					<form className="login-form text-center">
+						<input type="text" placeholder="user name" />
+						<input type="text" placeholder="password" />
+						<input type="text" placeholder="email id" />
+						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
+							create
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	);
