@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Contactanos = () => {
 	return (
@@ -16,7 +17,9 @@ export const Contactanos = () => {
 						saludable.
 					</p>
 					<p className="card-text">
-						<button className="Registrate">Registrate</button>
+						<Link to="/sign_up">
+							<button className="Registrate">Registrate</button>
+						</Link>
 					</p>
 				</div>
 			</div>

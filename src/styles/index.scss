@@ -3,11 +3,11 @@
 */
 body{
     background-color: white;
+      background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
 }
 
 .navbar img{
-    height: 110px;
-    width:245px ;
+    height: 90px;
     background-color:white;
     border:2px red;
 }
@@ -160,7 +160,7 @@ input{
 
 }
 .home{
-    background: lightgrey;
+    background: transparent;
 
 }
 .home div{
@@ -185,7 +185,8 @@ input{
     background-color: royalblue;
 }
 .staff_info{
-    background-color: royalblue;
+    background-color: transparent;
+    border: red;
 }
 .treatment{
     background-color: royalblue;
@@ -201,5 +202,8 @@ input{
     margin: auto;
     top: 400px;
     display: flex;
+}
+.navbar{
+    height: 100px;
 }
    
