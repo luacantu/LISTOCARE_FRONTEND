@@ -7,7 +7,7 @@ export const Navbar = () => {
 			<img src="https://files.slack.com/files-pri/T0BFXMWMV-F01634B3M7Z/image.png" />
 
 			<div className="ml-auto">
-				<Link to="/home">
+				<Link to="/sign_in">
 					<span className="entry-button">INGRESA AQUI</span>
 				</Link>
 				{/* <Link to="/demo">

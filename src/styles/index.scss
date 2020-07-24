@@ -27,6 +27,7 @@ body{
 }
 .contactanos{
     margin-right: 100px;
+    color: red;
 }
 .contactanos, .listocare, .productos{
     margin: 0 5px 0 5px;
@@ -76,11 +77,11 @@ body{
 }
 .miniparag{
     margin-right: 600px;
-    color:lightblue;
+    color:red;
 }
 
 .info-p{
-    color:darkgrey;
+    color:red;
 
 }
 .table{
@@ -100,7 +101,7 @@ body{
 }
 .last_name_input{
     display:block;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
@@ -124,7 +125,7 @@ top:80px;
 }
 
 .background-img {
-    background-image:url("https://i.pinimg.com/originals/ae/48/66/ae4866824012b855e82a358960c1d0d6.jpg");
+    // background-image:url("https://i.pinimg.com/originals/ae/48/66/ae4866824012b855e82a358960c1d0d6.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     
@@ -179,22 +180,25 @@ input{
     
 }
 .patients{
-    background-color: royalblue;
+    background-color: transparent;
 }
 .Diagnostic{
-    background-color: royalblue;
+    background-color: transparent;
 }
 .staff_info{
     background-color: transparent;
     border: red;
 }
 .treatment{
-    background-color: royalblue;
+    background-color: transparent;
     align-items: center;
     top: 60px;
 }
+.treatment div{
+    border-radius: 15px;
+}
 .imagen_fondo{
-    background-image:url("https://i.pinimg.com/originals/ae/48/66/ae4866824012b855e82a358960c1d0d6.jpg");
+    // background-image:url("https://i.pinimg.com/originals/ae/48/66/ae4866824012b855e82a358960c1d0d6.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     width: 360px;

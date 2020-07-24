@@ -6,7 +6,7 @@ export const Staff_info = () => {
 	const [id, setid] = useState(null);
 	const [password, setPassword] = useState(null);
 	const [specialty, setSpecialty] = useState(null);
-	const [email, setEmail] = useState(null);
+	const [Email, setEmail] = useState(null);
 	const [badgeNumber, setBadgeNumber] = useState(null);
 	const [phoneNumber, setPhoneNumber] = useState(null);
 
