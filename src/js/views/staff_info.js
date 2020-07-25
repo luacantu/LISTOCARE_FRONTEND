@@ -11,73 +11,87 @@ export const Staff_info = () => {
 	const [phoneNumber, setPhoneNumber] = useState(null);
 
 	return (
-		<div className="staff_info">
-			{/* <div className="col">
+		<div className="staff_bg">
+			<div className="staff_info">
+				{/* <div className="col">
 				<div className="row"> */}
-			<div className="form">
-				<form className="staff-form text-center">
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setFirstName(e.target.value)} type="text" placeholder="First name" />
+				<div className="form">
+					<form className="staff-form text-center">
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setFirstName(e.target.value)}
+									type="text"
+									placeholder="First name"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setLastName(e.target.value)} type="text" placeholder="Last name" />
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setLastName(e.target.value)}
+									type="text"
+									placeholder="Last name"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setPassword(e.target.value)} type="text" placeholder="Password" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setPassword(e.target.value)} type="text" placeholder="Password" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setSpecialty(e.target.value)} type="text" placeholder="Specialty" />
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setSpecialty(e.target.value)}
+									type="text"
+									placeholder="Specialty"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input
-								onChange={e => setBadgeNumber(e.target.value)}
-								type="text"
-								placeholder="Badge number"
-							/>
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setBadgeNumber(e.target.value)}
+									type="text"
+									placeholder="Badge number"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input
-								onChange={e => setPhoneNumber(e.target.value)}
-								type="text"
-								placeholder="Phone number"
-							/>
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setPhoneNumber(e.target.value)}
+									type="text"
+									placeholder="Phone number"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<button type="button" className="btn btn-danger btn-lg px-5 my-3">
-						Submit
-					</button>
-				</form>
-				{/* </div>
+						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
+							Submit
+						</button>
+					</form>
+					{/* </div>
 				</div> */}
+				</div>
 			</div>
 		</div>
 	);

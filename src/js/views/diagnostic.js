@@ -11,68 +11,78 @@ export const Didagnostic = () => {
 	const [Prescription, setPrescription] = useState(null);
 
 	return (
-		<div className="Diagnostic">
-			<div className="form">
-				<form className="Diagnostic-form text-center">
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
+		<div className="Diagnos_bg">
+			<div className="Diagnostic">
+				<div className="form">
+					<form className="Diagnostic-form text-center">
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setPatientid(e.target.value)} type="text" placeholder="Patient ID" />
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setPatientid(e.target.value)}
+									type="text"
+									placeholder="Patient ID"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setDateTime(e.target.value)} type="text" placeholder="Date time" />
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setDateTime(e.target.value)}
+									type="text"
+									placeholder="Date time"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input
-								onChange={e => setReasonForAdmition(e.target.value)}
-								type="text"
-								placeholder="Reason for admition"
-							/>
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setReasonForAdmition(e.target.value)}
+									type="text"
+									placeholder="Reason for admition"
+								/>
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setSymptoms(e.target.value)} type="text" placeholder="Symptoms" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setSymptoms(e.target.value)} type="text" placeholder="Symptoms" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setStatus(e.target.value)} type="text" placeholder="Status" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setStatus(e.target.value)} type="text" placeholder="Status" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input onChange={e => setNotes(e.target.value)} type="text" placeholder="Notes" />
+						<div className="row">
+							<div className="col">
+								<input onChange={e => setNotes(e.target.value)} type="text" placeholder="Notes" />
+							</div>
 						</div>
-					</div>
 
-					<div className="row">
-						<div className="col">
-							<input
-								onChange={e => setPrescription(e.target.value)}
-								type="text"
-								placeholder="Prescription"
-							/>
+						<div className="row">
+							<div className="col">
+								<input
+									onChange={e => setPrescription(e.target.value)}
+									type="text"
+									placeholder="Prescription"
+								/>
+							</div>
 						</div>
-					</div>
-					<button type="button" className="btn btn-danger btn-lg px-5 my-3">
-						Submit
-					</button>
-				</form>
+						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
+							Submit
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	);

@@ -13,14 +13,22 @@ export const Createacount = () => {
 			<div className="login-page">
 				<div className="form">
 					<form className="login-form text-center">
-						<input onChange={e => setName(e.target.value)} type="text" placeholder="name" />
+						<input onChange={e => setName(e.target.value)} type="text" placeholder="Nombre" />
 
-						<input onChange={e => setLastName(e.target.value)} type="text" placeholder="Last name" />
+						<input onChange={e => setLastName(e.target.value)} type="text" placeholder="Apellido" />
 
-						<input onChange={e => setUserName(e.target.value)} type="text" placeholder="user name" />
-						<input onChange={e => setPassword(e.target.value)} type="text" placeholder="password" />
+						<input
+							onChange={e => setUserName(e.target.value)}
+							type="text"
+							placeholder="Nombre de usuario"
+						/>
+						<input onChange={e => setPassword(e.target.value)} type="text" placeholder="Contraseña" />
 						<input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
-						<input onChange={e => setBadgeNumber(e.target.value)} type="text" placeholder="Badge number" />
+						<input
+							onChange={e => setBadgeNumber(e.target.value)}
+							type="text"
+							placeholder="Numero de codigo"
+						/>
 						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
 							create
 						</button>

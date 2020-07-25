@@ -15,6 +15,7 @@ body{
     color: darkgray;
     font-size: 1.2rem;
     padding: 8px;
+    border-radius: 10px;
 }
 .entry-button{
     background-color: red;
@@ -22,6 +23,7 @@ body{
     margin-right: 100px;
     padding: 8px;
     font-size: 1.2rem;
+    border-radius: 10px;
     
     
 }
@@ -55,6 +57,8 @@ body{
     position:absolute;
     top:72%;
     padding: 10px 45px;
+    border-radius: 20px;
+
 }
 .phone{
     height: 40rem;
@@ -88,15 +92,19 @@ body{
     margin-left: 10px;
     width:50%;
 }
-
+.log_bg{
+    background-image: url("https://www.gannett-cdn.com/-mm-/2f1a0cf57fca46b5b31d2b122a3ceb706a6f2bb4/c=0-31-600-369/local/-/media/Clarksville/2014/09/11/health-care-generic-everything-possible-5.jpg?width=1600&height=800&fit=crop")
+}
    
 .Last_name{
     // margin-left: 1000px;
+    height: 30px;
     color:red;
     size: 5px;
     border: 2px;
     margin-right:200px;
     display:block;
+    border-radius: 5px;
     
 }
 .last_name_input{
@@ -113,19 +121,21 @@ color: red;
 size: 10px;
 border: 2px;
 top:80px;
+
 }
 .Submit{
     margin-left: 1160px;
     background-color: red;
     color: white;
     display:flex;
+    border-radius: 5px;
 }
 .contactanos-parent{
     display: flex;
 }
 
 .background-img {
-    background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
+    background-image: url("https://www.gannett-cdn.com/-mm-/5c2bfbdf14400fab7e5b95d07eae2b211a07ad2f/c=0-74-2179-1300/local/-/media/2020/03/17/USATODAY/usatsports/MotleyFool-TMOT-ccac1e58-ventilatormask.jpg?width=1600&height=800&fit=crop&format=pjpg&auto=webp");
     background-repeat: no-repeat;
     height: 100vh;
     
@@ -162,7 +172,7 @@ input{
 }
 .home{
     background: transparent;
-    background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
+    // background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
 
 }
 .home div{
@@ -183,8 +193,9 @@ input{
 .patients{
     background-color: transparent;
 }
-.Diagnostic{
+.Diagnostic div{
     background-color: transparent;
+    
 }
 .staff_info{
     background-color: transparent;
@@ -194,14 +205,14 @@ input{
     background-color: transparent;
     align-items: center;
     top: 60px;
-    background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
+    background-image: url("https://www.uclahealth.org/images/carousel/here-for-you-2000x1200.jpg");
 }
 .treatment div{
     border-radius: 15px;
     
 }
 .imagen_fondo{
-    background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
+    // background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     width: 360px;
@@ -213,4 +224,16 @@ input{
 .navbar{
     height: 100px;
 }
-   
+.Diagnos_bg{
+    background-image: url("https://image.shutterstock.com/z/stock-photo-flask-in-scientist-hand-with-dropping-chemical-liquid-to-test-tubes-laboratory-research-and-465800198.jpg")
+}
+.home_bg{
+    background-color: lightblue;
+}
+.patient_bg{
+    background-image: url("https://www.admere.com/media/1441/nurse-and-patient-in-bed_amr_blog.jpg?crop=0,0.16241879060469763,0,0.22851074462768625&amp;cropmode=percentage&amp;width=1920&amp;height=780&amp;format=jpeg&amp;quality=40&amp;rnd=132387123610000000")
+}
+.staff_bg{
+    background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg")
+}
+			  
