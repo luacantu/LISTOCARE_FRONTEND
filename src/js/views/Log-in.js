@@ -1,9 +1,10 @@
-import React, { useState, Effect } from "react";
-
+import React, { useState, Effect, useContext } from "react";
+import { Context } from "../store/appContext";
 export const Log_in = () => {
-	const [Email, setEmail] = useState(null);
-	const [NombreDeUsuario, setNombreDeUsuario] = useState(null);
-	const [Contraseña, setContraseña] = useState(null);
+	const { store, actions } = useContext(Context);
+	const [email, setEmail] = useState(null);
+	const [nombreDeUsuario, setNombreDeUsuario] = useState(null);
+	const [contraseña, setContraseña] = useState(null);
 	return (
 		<div className="log_bg">
 			<div className="imagen_fondo">
@@ -36,7 +37,10 @@ export const Log_in = () => {
 								</div>
 							</div>
 
-							<button type="button" className="btn btn-danger btn-lg px-5 my-3">
+							<button
+								onClick={async () => actions.login(email, contraseña)}
+								type="button"
+								className="btn btn-danger btn-lg px-5 my-3">
 								create
 							</button>
 						</form>

@@ -27,21 +27,21 @@ export const Layout = () => {
 	return (
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter basename={basename}>
-				<ScrollToTop>
-					<Navbar />
-					<Switch>
-						<Route exact path="/new_visitor" component={new_visitor} />
-						<Route exact path="/home" component={Home} />
-						<Route exact path="/sign_up" component={Createacount} />
-						<Route exact path="/sign_in" component={Log_in} />
-						<Route exact path="/single/:theid" component={Single} />
-						<Route exact path="/staff_info" component={Staff_info} />
-						<Route exact path="/treatment" component={Treatment} />
-						<Route exact path="/patients" component={Patients} />
-						<Route exact path="/Diagnostic" component={Didagnostic} />
+				{/* <ScrollToTop> */}
+				<Navbar />
+				<Switch>
+					<Route exact path="/new_visitor" component={new_visitor} />
+					<Route exact path="/home" component={Home} />
+					<Route exact path="/sign_up" component={Createacount} />
+					<Route exact path="/sign_in" component={Log_in} />
+					<Route exact path="/single/:theid" component={Single} />
+					<Route exact path="/staff_info" component={Staff_info} />
+					<Route exact path="/treatment" component={Treatment} />
+					<Route exact path="/patients" component={Patients} />
+					<Route exact path="/Diagnostic" component={Didagnostic} />
 
-						<Route path="/" component={Contactanos} />
-						{/* <Route
+					<Route path="/" component={Contactanos} />
+					{/* <Route
 							render={() => (
 								<div className="div.a">
 									<img
@@ -65,9 +65,9 @@ export const Layout = () => {
 								</div>
 							)}
 						/> */}
-					</Switch>
-					<Footer />
-				</ScrollToTop>
+				</Switch>
+				<Footer />
+				{/* </ScrollToTop> */}
 			</BrowserRouter>
 		</div>
 	);

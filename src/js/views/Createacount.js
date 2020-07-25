@@ -1,12 +1,15 @@
-import React, { useState, Effect } from "react";
-
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
+import { Redirect, useHistory } from "react-router-dom";
 export const Createacount = () => {
+	const { store, actions } = useContext(Context);
 	const [name, setName] = useState(null);
-	const [LastName, setLastName] = useState(null);
-	const [UserName, setUserName] = useState(null);
+	const [lastName, setLastName] = useState(null);
+	const [userName, setUserName] = useState(null);
 	const [password, setPassword] = useState(null);
-	const [Email, setEmail] = useState(null);
-	const [BadgeNumber, setBadgeNumber] = useState(null);
+	const [email, setEmail] = useState(null);
+	const [badgeNumber, setBadgeNumber] = useState(null);
+	const history = useHistory();
 
 	return (
 		<div className="background-img">
@@ -29,7 +32,17 @@ export const Createacount = () => {
 							type="text"
 							placeholder="Numero de codigo"
 						/>
-						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
+						<button
+							onClick={async () => {
+								let success = await actions.doctorSignUp(name, lastName, userName, email, password);
+								if (success) {
+									history.push("/sign_in");
+								} else {
+									alert("something went wrong, please try again");
+								}
+							}}
+							type="button"
+							className="btn btn-danger btn-lg px-5 my-3">
 							create
 						</button>
 					</form>
