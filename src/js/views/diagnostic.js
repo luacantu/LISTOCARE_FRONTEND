@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, Effect } from "react";
 
 export const Didagnostic = () => {
 	const [id, setid] = useState(null);

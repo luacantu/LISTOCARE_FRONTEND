@@ -6,7 +6,7 @@ export const Contactanos = () => {
 		<div className="position-relative">
 			<div className="card bg-dark text-white">
 				<img
-					src="https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/blue-abstract-moving-flowing-waves-on-white-background-blurred-smooth-design-video-animation-ultra-hd-4k-3840x2160_rffdhgnp_thumbnail-1080_05.png"
+					src="https://files.slack.com/files-pri/T0BFXMWMV-F017QBEA59Q/march_1-v3.jpg"
 					className="card-img"
 					alt="..."
 				/>

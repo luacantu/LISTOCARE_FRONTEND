@@ -15,7 +15,7 @@ export const Navbar = () => {
 				</Link> */}
 
 				<Link to="/sign_up">
-					<button className="listocare">Que es Listocare</button>
+					<button className="listocare">CONTENIDO</button>
 				</Link>
 
 				<Link to="/demo">

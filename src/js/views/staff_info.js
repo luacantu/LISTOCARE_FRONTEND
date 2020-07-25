@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, Effect } from "react";
 
 export const Staff_info = () => {
 	const [firstName, setFirstName] = useState(null);
