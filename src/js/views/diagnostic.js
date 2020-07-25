@@ -12,18 +12,24 @@ export const Didagnostic = () => {
 
 	return (
 		<div className="Diagnos_bg">
-			<div className="Diagnostic">
-				<div className="form">
-					<form className="Diagnostic-form text-center">
-						<div className="row">
-							<div className="col">
-								<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
-							</div>
+			<div className="Diagnostic d-flex justify-content-center ">
+				<div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg">
+					<form className="col-10">
+						<div className="form-group">
+							{/* <div className="col"> */}
+							<input
+								className="form-control"
+								onChange={e => setid(e.target.value)}
+								type="text"
+								placeholder="ID"
+							/>
+							{/* </div> */}
 						</div>
 
-						<div className="row">
-							<div className="col">
+						<div className="form group">
+							<div className="col-10">
 								<input
+									className="form-control"
 									onChange={e => setPatientid(e.target.value)}
 									type="text"
 									placeholder="Patient ID"
@@ -41,19 +47,24 @@ export const Didagnostic = () => {
 							</div>
 						</div>
 
-						<div className="row">
+						<div className="form-group">
 							<div className="col">
-								<input
+								<textarea
 									onChange={e => setReasonForAdmition(e.target.value)}
-									type="text"
+									className="form-control"
 									placeholder="Reason for admition"
 								/>
 							</div>
 						</div>
 
-						<div className="row">
+						<div className="form-group">
 							<div className="col">
-								<input onChange={e => setSymptoms(e.target.value)} type="text" placeholder="Symptoms" />
+								<textarea
+									className="form-control"
+									onChange={e => setSymptoms(e.target.value)}
+									type="text"
+									placeholder="Symptoms"
+								/>
 							</div>
 						</div>
 
@@ -63,15 +74,21 @@ export const Didagnostic = () => {
 							</div>
 						</div>
 
-						<div className="row">
+						<div className="form-group">
 							<div className="col">
-								<input onChange={e => setNotes(e.target.value)} type="text" placeholder="Notes" />
+								<textarea
+									className="form-control"
+									onChange={e => setNotes(e.target.value)}
+									type="text"
+									placeholder="Notes"
+								/>
 							</div>
 						</div>
 
-						<div className="row">
+						<div className="form-group">
 							<div className="col">
-								<input
+								<textarea
+									className="form-control"
 									onChange={e => setPrescription(e.target.value)}
 									type="text"
 									placeholder="Prescription"

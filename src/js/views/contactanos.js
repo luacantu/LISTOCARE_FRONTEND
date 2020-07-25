@@ -25,6 +25,9 @@ export const Contactanos = () => {
 			</div>
 			<div className="phone" />
 			<div className="lastdiv" />
+			<div className="row py-4 px-3">
+				<h2>lo que ofrecemos</h2>
+			</div>
 			<div className="contactanos-parent">
 				<div className="left-side">
 					<p className="info-p">

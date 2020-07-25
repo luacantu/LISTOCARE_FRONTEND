@@ -41,7 +41,7 @@ export const Log_in = () => {
 								onClick={async () => actions.login(email, contraseña)}
 								type="button"
 								className="btn btn-danger btn-lg px-5 my-3">
-								create
+								Log in
 							</button>
 						</form>
 					</div>

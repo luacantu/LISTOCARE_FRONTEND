@@ -12,14 +12,15 @@ export const Staff_info = () => {
 
 	return (
 		<div className="staff_bg">
-			<div className="staff_info">
+			<div className="Diagnostic d-flex justify-content-center">
 				{/* <div className="col">
 				<div className="row"> */}
-				<div className="form">
+				<div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg">
 					<form className="staff-form text-center">
-						<div className="row">
-							<div className="col">
+						<div className="form-group">
+							<div className="col-30">
 								<input
+									className="form-control"
 									onChange={e => setFirstName(e.target.value)}
 									type="text"
 									placeholder="First name"
@@ -27,9 +28,10 @@ export const Staff_info = () => {
 							</div>
 						</div>
 
-						<div className="row">
-							<div className="col">
+						<div className="form-group">
+							<div className="col-30">
 								<input
+									className="form-control"
 									onChange={e => setLastName(e.target.value)}
 									type="text"
 									placeholder="Last name"
@@ -37,21 +39,32 @@ export const Staff_info = () => {
 							</div>
 						</div>
 
-						<div className="row">
-							<div className="col">
-								<input onChange={e => setid(e.target.value)} type="text" placeholder="ID" />
-							</div>
-						</div>
-
-						<div className="row">
-							<div className="col">
-								<input onChange={e => setPassword(e.target.value)} type="text" placeholder="Password" />
-							</div>
-						</div>
-
-						<div className="row">
-							<div className="col">
+						<div className="form-group">
+							<div className="col-30">
 								<input
+									className="form-control"
+									onChange={e => setid(e.target.value)}
+									type="text"
+									placeholder="ID"
+								/>
+							</div>
+						</div>
+
+						<div className="form-group">
+							<div className="col-30">
+								<input
+									className="form-control"
+									onChange={e => setPassword(e.target.value)}
+									type="text"
+									placeholder="Password"
+								/>
+							</div>
+						</div>
+
+						<div className="form-group">
+							<div className="col-30">
+								<input
+									className="form-control"
 									onChange={e => setSpecialty(e.target.value)}
 									type="text"
 									placeholder="Specialty"
@@ -59,15 +72,21 @@ export const Staff_info = () => {
 							</div>
 						</div>
 
-						<div className="row">
-							<div className="col">
-								<input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
+						<div className="form-group">
+							<div className="col-30">
+								<input
+									className="form-control"
+									onChange={e => setEmail(e.target.value)}
+									type="text"
+									placeholder="Email"
+								/>
 							</div>
 						</div>
 
-						<div className="row">
-							<div className="col">
+						<div className="form-group">
+							<div className="col-30">
 								<input
+									className="form-control"
 									onChange={e => setBadgeNumber(e.target.value)}
 									type="text"
 									placeholder="Badge number"
@@ -75,9 +94,10 @@ export const Staff_info = () => {
 							</div>
 						</div>
 
-						<div className="row">
-							<div className="col">
+						<div className="form-group">
+							<div className="col-30">
 								<input
+									className="form-control"
 									onChange={e => setPhoneNumber(e.target.value)}
 									type="text"
 									placeholder="Phone number"
