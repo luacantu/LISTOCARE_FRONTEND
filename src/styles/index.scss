@@ -136,9 +136,12 @@ top:80px;
 }
 
 .background-img {
-    background-image: url("https://www.gannett-cdn.com/-mm-/5c2bfbdf14400fab7e5b95d07eae2b211a07ad2f/c=0-74-2179-1300/local/-/media/2020/03/17/USATODAY/usatsports/MotleyFool-TMOT-ccac1e58-ventilatormask.jpg?width=1600&height=800&fit=crop&format=pjpg&auto=webp");
+    // background-image: url("https://www.gannett-cdn.com/-mm-/5c2bfbdf14400fab7e5b95d07eae2b211a07ad2f/c=0-74-2179-1300/local/-/media/2020/03/17/USATODAY/usatsports/MotleyFool-TMOT-ccac1e58-ventilatormask.jpg?width=1600&height=800&fit=crop&format=pjpg&auto=webp");
     background-repeat: no-repeat;
     height: 100vh;
+    background-color: grey;
+    bottom: 500px;
+
     
 
 }
@@ -237,4 +240,28 @@ input{
 .staff_bg{
     background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg")
 }
-			  
+.createacc_title{
+    text-align: center;
+    color: red;
+}
+.Log_title{
+    text-align: center;
+    color: red;
+   
+}
+.staff_title{
+    text-align: center;
+    color: red;
+}
+.tratamiento_title{
+    text-align: center;
+    color: red;
+}
+.patient_title{
+    text-align: center;
+    color: red;
+}
+.Diagnostic_title{
+    text-align: center;
+    color: red;
+}
