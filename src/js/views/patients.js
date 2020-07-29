@@ -45,7 +45,7 @@ export const Patients = () => {
 										className="form-control"
 										onChange={e => setPrimerNombre(e.target.value)}
 										type="text"
-										placeholder="Primer Nombre"
+										placeholder="Nombre"
 									/>
 								</div>
 							</div>
@@ -99,7 +99,7 @@ export const Patients = () => {
 										className="form-control"
 										onChange={e => setNumeroTelefonico(e.target.value)}
 										type="text"
-										placeholder="Numero telefonico"
+										placeholder="Numero de telefono"
 									/>
 								</div>
 							</div>

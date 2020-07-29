@@ -23,12 +23,12 @@ export const Didagnostic = () => {
 						<form className="col-10">
 							<div className="form-group">
 								{/* <div className="col"> */}
-								<input
+								{/* <input
 									className="form-control"
 									onChange={e => setid(e.target.value)}
 									type="text"
 									placeholder="ID"
-								/>
+								/> */}
 								{/* </div> */}
 							</div>
 

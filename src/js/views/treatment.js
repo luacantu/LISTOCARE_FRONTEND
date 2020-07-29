@@ -34,7 +34,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setDoctorid(e.target.value)}
 									type="text"
-									placeholder="Doctor ID"
+									placeholder="ID del doctor"
 								/>
 							</div>
 						</div>
@@ -45,7 +45,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setPatientid(e.target.value)}
 									type="text"
-									placeholder="Patient ID"
+									placeholder="ID del paciente"
 								/>
 							</div>
 						</div>
@@ -56,7 +56,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setDoctorid(e.target.value)}
 									type="text"
-									placeholder="Diagnostic ID"
+									placeholder="Diagnostico"
 								/>
 							</div>
 						</div>
@@ -65,17 +65,9 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
+<<<<<<< HEAD
 									onChange={e => setDate(e.target.value)}
-									type="text"
-									placeholder="Fecha"
-								/>
-							</div>
-						</div>
-
-						<div className="form-group">
-							<div className="col-10">
-								<input
-									className="form-control"
+=======
 									onChange={e => setName(e.target.value)}
 									type="text"
 									placeholder="Nombre"
@@ -88,8 +80,39 @@ export const Treatment = () => {
 								<textarea
 									className="form-control"
 									onChange={e => setStatus(e.target.value)}
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 									type="text"
+									placeholder="Fecha"
+								/>
+							</div>
+						</div>
+
+						<div className="form-group">
+							<div className="col-10">
+								<input
+									className="form-control"
+									onChange={e => setName(e.target.value)}
+									type="text"
+<<<<<<< HEAD
+									placeholder="Nombre"
+=======
+									placeholder="Direccion"
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
+								/>
+							</div>
+						</div>
+
+						<div className="form-group">
+							<div className="col">
+								<textarea
+									className="form-control"
+									onChange={e => setStatus(e.target.value)}
+									type="text"
+<<<<<<< HEAD
 									placeholder="Status"
+=======
+									placeholder="Numero de telefono"
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -100,7 +123,11 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setHospital(e.target.value)}
 									type="text"
+<<<<<<< HEAD
 									placeholder="Hospital"
+=======
+									placeholder="Numero de habitacion"
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -121,7 +148,11 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setRoom(e.target.value)}
 									type="text"
+<<<<<<< HEAD
 									placeholder="Habitacion"
+=======
+									placeholder="Fecha"
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -132,7 +163,11 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setNotes(e.target.value)}
 									type="text"
+<<<<<<< HEAD
 									placeholder="Notes"
+=======
+									placeholder="Comentario"
+>>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
