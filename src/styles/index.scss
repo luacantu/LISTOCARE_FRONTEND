@@ -6,11 +6,21 @@ body{
     //  background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
 }
 
-.navbar img{
+.navbar .img{
     height: 90px;
     background-color:white;
     border:2px
 }
+.navbar .brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding:0px;
+}
+
 .navbar button{
     color: darkgray;
     font-size: 1.2rem;
@@ -26,6 +36,11 @@ body{
     font-size: 1.2rem;
     border-radius: 10px;
     
+    
+}
+.contact{
+    padding:300px;
+    margin-top:100%;
     
 }
 .contactanos{
@@ -76,7 +91,7 @@ body{
     top:50%;
     right:0;
     // margin-left: 1250px;
-    transform:translate(-20%,-180%);
+    transform:translate(-20%,-220%);
 }
 .lastdiv{
     background-color:blue;
@@ -99,6 +114,15 @@ body{
     width: 100%;
     height: 30rem; 
 }
+// .video{
+//     background-image:url("../vid/video.mp4");
+//      background-position: center;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: 30rem; 
+
+// }
 .miniparag{
     margin-left: 200px;
     color:red;
@@ -110,8 +134,9 @@ body{
 
 }
 .table{
-    margin-left: 10px;
-    width:50%;
+    margin: 5px;
+    margin-left:250px;
+    width:500px;
 }
 .log_bg{
     background-image: url("https://www.gannett-cdn.com/-mm-/2f1a0cf57fca46b5b31d2b122a3ceb706a6f2bb4/c=0-31-600-369/local/-/media/Clarksville/2014/09/11/health-care-generic-everything-possible-5.jpg?width=1600&height=800&fit=crop")
@@ -123,18 +148,19 @@ body{
     color:red;
     size: 5px;
     border: 2px;
-    margin-right:200px;
     display:block;
     border-radius: 5px;
     
 }
 .last_name_input{
-    display:block;
-    margin-left: 20px;
+    // display:block;
+    // margin-left: 20px;
 }
-
-
-
+.input{
+    padding: 5px;
+    margin: 20px;
+    width: 600px;
+}
 
 .EMAIL{
 margin-left: 80px;    
@@ -144,6 +170,10 @@ border: 2px;
 top:80px;
 
 }
+.contactus.row{
+    margin-left:500px;
+    padding:20px;
+}
 .Submit{
     margin-left: 1160px;
     background-color: red;
@@ -152,7 +182,9 @@ top:80px;
     border-radius: 5px;
 }
 .contactanos-parent{
-    display: flex;
+    margin:10px;
+    margin-left: 250px;
+    color: rgb(26, 126, 121)
 }
 
 .background-img {
@@ -184,14 +216,14 @@ top:80px;
 }
 .login-page{
     width: 360px;
-    padding: 10% 0 0;
+    padding: 10px 0 0;
     margin: auto;
     top: 400px;
 }
 input{
     padding: 10px;
-    margin: 10px;
-    width: 300px;
+    margin: 5px;
+    width: 500px;
 
 }
 .home{

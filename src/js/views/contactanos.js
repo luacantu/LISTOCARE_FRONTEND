@@ -23,38 +23,58 @@ export const Contactanos = () => {
 			</div>
 			<div className="phone" />
 			<div className="lastdiv" />
-			<div className="servicios" />
 			<div className="somos" />
+			<div className="servicios" />
+			<div className="video" />
 			{/* <div className="row py-4 px-3">
 				<h2>lo que ofrecemos</h2>
 			</div> */}
-			<div className="contactanos-parent">
-				<div className="left-side">
-					<p className="info-p">
-						<h1>Contactanos</h1>
-					</p>
-					<p className="miniparag">
-						<h2>
-							La tecnologia es el corazon de nuestro trabajo,nuestro compromiso hacer la atencion medica
-							mas accesible
-						</h2>
-					</p>
+			<div id="contact" className="container-fluid bg-grey">
+				<h2 className="text-center">Contactanos</h2>
+				<div id="contactus" className="row">
+					<div id="texta" className="col-md-5 text-center">
+						<p>Nuestro Servicio al cliente esta trabajando 24/7 para ti</p>
+						<p>
+							<span className="glyphicon glyphicon-map-marker" /> Miami, US
+						</p>
+						<p>
+							<span className="glyphicon glyphicon-phone" /> +00 7868037648
+						</p>
+						<p>
+							<span className="glyphicon glyphicon-envelope" /> hola@listocare.com
+						</p>
+					</div>
 				</div>
+			</div>
+
+			<div className="contactanos-parent">
+				<div className="content-section text-center" />
+
 				<table className="table">
 					<tr>
-						<td className="EMAIL">
-							EMAIL :<td />
+						<td className="Nombre">
+							Nombre :<td />
+							<input type="text" nombre="" />
+						</td>
+					</tr>
+					<tr>
+						<td className="Email">
+							Email :<td />
 							<input type="text" email="" />
 						</td>
 					</tr>
 					<tr>
-						<td className="Last_name">Comment :</td>
-
-						<input type="text" className="last_name_input" />
+						<td className="Comment">
+							Comment :<td />
+							<input type="text" comment="" />
+						</td>
 					</tr>
+
+					<Link to="/submit">
+						<button className="submit">Enviar</button>
+					</Link>
 				</table>
 			</div>
-			<button className="Submit">Submit</button>
 		</div>
 	);
 };

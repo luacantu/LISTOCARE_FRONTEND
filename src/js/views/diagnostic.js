@@ -1,14 +1,18 @@
-import React, { useState, Effect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Redirect, useHistory } from "react-router-dom";
 
 export const Didagnostic = () => {
 	const [id, setid] = useState(null);
 	const [Patientid, setPatientid] = useState(null);
-	const [DateTime, setDateTime] = useState(null);
-	const [ReasonForAdmition, setReasonForAdmition] = useState(null);
+	const [Name, setName] = useState(null);
+	const [CovidTestResult, setCovidTestResult] = useState(null);
+	const [Date, setDate] = useState(null);
+	const [Admission, setAdmission] = useState(null);
 	const [Status, setStatus] = useState(null);
 	const [Symptoms, setSymptoms] = useState(null);
 	const [Notes, setNotes] = useState(null);
 	const [Prescription, setPrescription] = useState(null);
+	const [TotalCost, setTotalCost] = useState(null);
 
 	return (
 		<div className="Diagnostic_title">
@@ -42,19 +46,25 @@ export const Didagnostic = () => {
 							<div className="row">
 								<div className="col">
 									<input
-										onChange={e => setDateTime(e.target.value)}
+										onChange={e => setCovidTestResult(e.target.value)}
 										type="text"
-										placeholder="Date time"
+										placeholder="Covid19 Resultado"
 									/>
+								</div>
+							</div>
+
+							<div className="row">
+								<div className="col">
+									<input onChange={e => setDate(e.target.value)} type="text" placeholder="Fecha" />
 								</div>
 							</div>
 
 							<div className="form-group">
 								{/* <div className="col"> */}
 								<textarea
-									onChange={e => setReasonForAdmition(e.target.value)}
+									onChange={e => setAdmission(e.target.value)}
 									className="form-control"
-									placeholder="Reason for admition"
+									placeholder="Admision"
 								/>
 								{/* </div> */}
 							</div>
@@ -65,7 +75,7 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setSymptoms(e.target.value)}
 										type="text"
-										placeholder="Symptoms"
+										placeholder="Sintomas"
 									/>
 								</div>
 							</div>
@@ -82,7 +92,7 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setNotes(e.target.value)}
 										type="text"
-										placeholder="Notes"
+										placeholder="Notas"
 									/>
 								</div>
 							</div>
@@ -93,12 +103,43 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setPrescription(e.target.value)}
 										type="text"
-										placeholder="Prescription"
+										placeholder="Prescripcion"
 									/>
 								</div>
 							</div>
-							<button type="button" className="btn btn-danger btn-lg px-5 my-3">
-								Submit
+
+							<div className="row">
+								<div className="col">
+									<input
+										onChange={e => setTotalCost(e.target.value)}
+										type="text"
+										placeholder="Costo Total"
+									/>
+								</div>
+							</div>
+
+							<button
+								onClick={async () => {
+									let success = await actions.diagnostic(
+										Patientid,
+										name,
+										covidtestresult,
+										date,
+										hospital,
+										room,
+										covidtest,
+										status,
+										notes
+									);
+									if (success) {
+										history.push("/sign_in");
+									} else {
+										alert("something went wrong, please try again");
+									}
+								}}
+								type="button"
+								className="btn btn-danger btn-lg px-5 my-3">
+								Aceptar
 							</button>
 						</form>
 					</div>

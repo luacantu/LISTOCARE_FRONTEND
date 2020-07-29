@@ -8,7 +8,7 @@ export const Createacount = () => {
 	const [userName, setUserName] = useState(null);
 	const [password, setPassword] = useState(null);
 	const [email, setEmail] = useState(null);
-	const [badgeNumber, setBadgeNumber] = useState(null);
+	// const [badgeNumber, setBadgeNumber] = useState(null);
 	const history = useHistory();
 
 	return (
@@ -29,11 +29,11 @@ export const Createacount = () => {
 							/>
 							<input onChange={e => setPassword(e.target.value)} type="text" placeholder="Contraseña" />
 							<input onChange={e => setEmail(e.target.value)} type="text" placeholder="Email" />
-							<input
+							{/* <input
 								onChange={e => setBadgeNumber(e.target.value)}
 								type="text"
 								placeholder="Numero de codigo"
-							/>
+							/> */}
 							<button
 								onClick={async () => {
 									let success = await actions.doctorSignUp(name, lastName, userName, email, password);
@@ -45,7 +45,7 @@ export const Createacount = () => {
 								}}
 								type="button"
 								className="btn btn-danger btn-lg px-5 my-3">
-								create
+								Aceptar
 							</button>
 						</form>
 					</div>

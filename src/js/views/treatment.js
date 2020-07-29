@@ -1,4 +1,5 @@
-import React, { useState, Effect } from "react";
+import React, { useState, Effect, useContext } from "react";
+import { Redirect, useHistory } from "react-router-dom";
 
 export const Treatment = () => {
 	const [id, setid] = useState(null);
@@ -6,13 +7,13 @@ export const Treatment = () => {
 	const [Patientid, setPatientid] = useState(null);
 	const [Diagnosticid, setDiagnosticid] = useState(null);
 	const [Name, setName] = useState(null);
+	const [Date, setDate] = useState(null);
+	const [Hospital, setHospital] = useState(null);
+	// const [PhoneNumber, setPhoneNumber] = useState(null);
+	const [Room, setRoom] = useState(null);
 	const [Status, setStatus] = useState(null);
-	const [Adress, setAdress] = useState(null);
-	const [PhoneNumber, setPhoneNumber] = useState(null);
-	const [RoomNumber, setRoomNumber] = useState(null);
-	const [Email, setEmail] = useState(null);
-	const [StartDate, setStartDate] = useState(null);
-	const [EndDate, setEndDate] = useState(null);
+	const [Covidtest, setCovidtest] = useState(null);
+	const [Notes, setNotes] = useState(null);
 	return (
 		<div className="tratamiento_title">
 			<h1>Tratamiento</h1>
@@ -64,9 +65,20 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
+									onChange={e => setDate(e.target.value)}
+									type="text"
+									placeholder="Fecha"
+								/>
+							</div>
+						</div>
+
+						<div className="form-group">
+							<div className="col-10">
+								<input
+									className="form-control"
 									onChange={e => setName(e.target.value)}
 									type="text"
-									placeholder="Name"
+									placeholder="Nombre"
 								/>
 							</div>
 						</div>
@@ -86,9 +98,9 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
-									onChange={e => setAdress(e.target.value)}
+									onChange={e => setHospital(e.target.value)}
 									type="text"
-									placeholder="Adress"
+									placeholder="Hospital"
 								/>
 							</div>
 						</div>
@@ -96,9 +108,9 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
-									onChange={e => setPhoneNumber(e.target.value)}
+									onChange={e => setCovidtest(e.target.value)}
 									type="text"
-									placeholder="Phone number"
+									placeholder="Covidtest"
 								/>
 							</div>
 						</div>
@@ -107,9 +119,9 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
-									onChange={e => setRoomNumber(e.target.value)}
+									onChange={e => setRoom(e.target.value)}
 									type="text"
-									placeholder="Room number"
+									placeholder="Habitacion"
 								/>
 							</div>
 						</div>
@@ -118,36 +130,36 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
-									onChange={e => setEmail(e.target.value)}
+									onChange={e => setNotes(e.target.value)}
 									type="text"
-									placeholder="Email"
+									placeholder="Notes"
 								/>
 							</div>
 						</div>
 
-						<div className="form-group">
-							<div className="col-10">
-								<input
-									className="form-control"
-									onChange={e => setStartDate(e.target.value)}
-									type="text"
-									placeholder="Start date"
-								/>
-							</div>
-						</div>
-
-						<div className="form-group">
-							<div className="col-10">
-								<input
-									className="form-control"
-									onChange={e => setEndDate(e.target.value)}
-									type="text"
-									placeholder="End date"
-								/>
-							</div>
-						</div>
-						<button type="button" className="btn btn-danger btn-lg px-5 my-3">
-							Submit
+						<button
+							onClick={async () => {
+								let success = await actions.treatment(
+									Doctorid,
+									Patientid,
+									Diagnosticid,
+									name,
+									date,
+									hospital,
+									room,
+									covidtest,
+									status,
+									notes
+								);
+								if (success) {
+									history.push("/sign_in");
+								} else {
+									alert("something went wrong, please try again");
+								}
+							}}
+							type="button"
+							className="btn btn-danger btn-lg px-5 my-3">
+							Aceptar
 						</button>
 					</form>
 				</div>
