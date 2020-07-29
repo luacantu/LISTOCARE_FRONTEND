@@ -1,20 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import march1 from "../../img/march1-v3.jpg";
 
 export const Contactanos = () => {
 	return (
 		<div className="position-relative">
 			<div className="card bg-dark text-white">
-				<img
-					src="https://files.slack.com/files-pri/T0BFXMWMV-F017QBEA59Q/march_1-v3.jpg"
-					className="card-img"
-					alt="..."
-				/>
+				<img src={march1} className="card-img" alt="..." />
 				<div className="card-img-overlay">
-					<h5 className="card-title">Tu consultorio virtual durante la pandemia covid-19</h5>
+					<h1 className="card-title">Soluciones tecnológicas</h1>
+					<h5 className="card-title">para Médicos</h5>
 					<p className="card-text">
-						Listocare lo ayuda a brindar una exelente atencion al paiente mientras desarrolla una practica
-						saludable.
+						Comienza la transformacion digital de tu consulta medica. Crea tu propia web de servicios para
+						tus pacientes y clientes.
 					</p>
 					<p className="card-text">
 						<Link to="/sign_up">
@@ -25,9 +23,11 @@ export const Contactanos = () => {
 			</div>
 			<div className="phone" />
 			<div className="lastdiv" />
-			<div className="row py-4 px-3">
+			<div className="servicios" />
+			<div className="somos" />
+			{/* <div className="row py-4 px-3">
 				<h2>lo que ofrecemos</h2>
-			</div>
+			</div> */}
 			<div className="contactanos-parent">
 				<div className="left-side">
 					<p className="info-p">
