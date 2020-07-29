@@ -19,12 +19,12 @@ export const Didagnostic = () => {
 						<form className="col-10">
 							<div className="form-group">
 								{/* <div className="col"> */}
-								<input
+								{/* <input
 									className="form-control"
 									onChange={e => setid(e.target.value)}
 									type="text"
 									placeholder="ID"
-								/>
+								/> */}
 								{/* </div> */}
 							</div>
 
@@ -44,7 +44,7 @@ export const Didagnostic = () => {
 									<input
 										onChange={e => setDateTime(e.target.value)}
 										type="text"
-										placeholder="Date time"
+										placeholder="Fecha"
 									/>
 								</div>
 							</div>
@@ -54,7 +54,7 @@ export const Didagnostic = () => {
 								<textarea
 									onChange={e => setReasonForAdmition(e.target.value)}
 									className="form-control"
-									placeholder="Reason for admition"
+									placeholder="Razon de admision"
 								/>
 								{/* </div> */}
 							</div>
@@ -65,7 +65,7 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setSymptoms(e.target.value)}
 										type="text"
-										placeholder="Symptoms"
+										placeholder="Syntomas"
 									/>
 								</div>
 							</div>
@@ -82,7 +82,7 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setNotes(e.target.value)}
 										type="text"
-										placeholder="Notes"
+										placeholder="Notas"
 									/>
 								</div>
 							</div>
@@ -93,7 +93,7 @@ export const Didagnostic = () => {
 										className="form-control"
 										onChange={e => setPrescription(e.target.value)}
 										type="text"
-										placeholder="Prescription"
+										placeholder="Prescripcion"
 									/>
 								</div>
 							</div>

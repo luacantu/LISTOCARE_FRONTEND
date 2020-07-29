@@ -33,7 +33,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setDoctorid(e.target.value)}
 									type="text"
-									placeholder="Doctor ID"
+									placeholder="ID del doctor"
 								/>
 							</div>
 						</div>
@@ -44,7 +44,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setPatientid(e.target.value)}
 									type="text"
-									placeholder="Patient ID"
+									placeholder="ID del paciente"
 								/>
 							</div>
 						</div>
@@ -55,7 +55,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setDoctorid(e.target.value)}
 									type="text"
-									placeholder="Diagnostic ID"
+									placeholder="Diagnostico"
 								/>
 							</div>
 						</div>
@@ -66,7 +66,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setName(e.target.value)}
 									type="text"
-									placeholder="Name"
+									placeholder="Nombre"
 								/>
 							</div>
 						</div>
@@ -88,7 +88,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setAdress(e.target.value)}
 									type="text"
-									placeholder="Adress"
+									placeholder="Direccion"
 								/>
 							</div>
 						</div>
@@ -98,7 +98,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setPhoneNumber(e.target.value)}
 									type="text"
-									placeholder="Phone number"
+									placeholder="Numero de telefono"
 								/>
 							</div>
 						</div>
@@ -109,7 +109,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setRoomNumber(e.target.value)}
 									type="text"
-									placeholder="Room number"
+									placeholder="Numero de habitacion"
 								/>
 							</div>
 						</div>
@@ -131,7 +131,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setStartDate(e.target.value)}
 									type="text"
-									placeholder="Start date"
+									placeholder="Fecha"
 								/>
 							</div>
 						</div>
@@ -142,7 +142,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setEndDate(e.target.value)}
 									type="text"
-									placeholder="End date"
+									placeholder="Comentario"
 								/>
 							</div>
 						</div>

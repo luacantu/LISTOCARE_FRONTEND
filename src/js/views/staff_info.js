@@ -25,7 +25,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setFirstName(e.target.value)}
 										type="text"
-										placeholder="First name"
+										placeholder="Nombre"
 									/>
 								</div>
 							</div>
@@ -36,7 +36,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setLastName(e.target.value)}
 										type="text"
-										placeholder="Last name"
+										placeholder="Apellido"
 									/>
 								</div>
 							</div>
@@ -58,7 +58,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setPassword(e.target.value)}
 										type="text"
-										placeholder="Password"
+										placeholder="Contraseña"
 									/>
 								</div>
 							</div>
@@ -69,7 +69,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setSpecialty(e.target.value)}
 										type="text"
-										placeholder="Specialty"
+										placeholder="Especialidad"
 									/>
 								</div>
 							</div>
@@ -91,7 +91,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setBadgeNumber(e.target.value)}
 										type="text"
-										placeholder="Badge number"
+										placeholder="Numero de identificacion"
 									/>
 								</div>
 							</div>
@@ -102,7 +102,7 @@ export const Staff_info = () => {
 										className="form-control"
 										onChange={e => setPhoneNumber(e.target.value)}
 										type="text"
-										placeholder="Phone number"
+										placeholder="Numero de telefono"
 									/>
 								</div>
 							</div>
