@@ -1,10 +1,12 @@
-const listocareBackendUrl = "https://3000-dccb160b-118f-4318-a1aa-bb2957d1c89d.ws-us02.gitpod.io";
+// aquí va el backend url
+const listocareBackendUrl = "https://3000-b7e42043-27ab-40e8-9e7b-2ac184327677.ws-us02.gitpod.io/";
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			token: null,
 			doctorId: null,
-
+			patients: [],
+			patientTreatments: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -34,8 +36,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				// console.log("body", body);
 				if (response.status == 200) {
 					// console.log("test");
-					setStore({ token: body.jwt, doctorId: body.doctor_id });
-				} else setStore({ token: null, doctorId: null });
+					localStorage.setItem("token", body.jwt);
+					setStore({ token: body.jwt });
+					return true;
+				} else {
+					setStore({ token: null });
+					return false;
+				}
 			},
 			doctorSignUp: async (name, lastName, username, email, password) => {
 				const response = await fetch(`${listocareBackendUrl}/medicalstaff`, {
@@ -57,22 +64,24 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return false;
 				}
 			},
-			Patients: async (name, lastName, username, email, password) => {
+			Patients: async (date, name, lastName, dob, gender, address, email, phone, idDoc) => {
+				const store = getStore();
 				const response = await fetch(`${listocareBackendUrl}/patient`, {
 					method: "POST",
 					headers: {
-						"Content-Type": "application/json"
+						"Content-Type": "application/json",
+						Authorization: `Bearer ${store.token}`
 					},
 					body: JSON.stringify({
-						id,
-						Fecha,
-						Nombre,
-						Apellido,
-						FechaDeNacimiento,
-						Genero,
-						Direccion,
-						NumeroTelefonico,
-						NumeroDeIdentificacion
+						date: date,
+						first_name: name,
+						last_name: lastName,
+						birth_date: dob,
+						gender: gender,
+						address: address,
+						email: email,
+						phone_number: phone,
+						id_number: idDoc
 					})
 				});
 				if (response.ok) {
@@ -81,32 +90,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return false;
 				}
 			},
-			Treatment: async (
-				Doctorid,
-				Patientid,
-				Diagnosticid,
-				name,
-				date,
-				hospital,
-				room,
-				covidtest,
-				status,
-				notes
-			) => {
+			treatment: async (patient_id, name, date, hospital, room, covidtestresult, status, notes) => {
+				const store = getStore();
 				const response = await fetch(`${listocareBackendUrl}/treatment`, {
 					method: "POST",
 					headers: {
-						"Content-Type": "application/json"
+						"Content-Type": "application/json",
+						Authorization: `Bearer ${store.token}`
 					},
 					body: JSON.stringify({
-						Doctorid,
-						Patientid,
-						Diagnosticid,
+						patient_id,
 						name,
 						date,
 						hospital,
 						room,
-						covidtest,
+						covidtestresult,
 						status,
 						notes
 					})
@@ -117,33 +115,38 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return false;
 				}
 			},
-			Diagnotic: async (
-				Doctorid,
-				Patientid,
-				Diagnosticid,
+			diagnostic: async (
+				patient_id,
+				treatment_id,
 				name,
-				date,
-				hospital,
-				room,
-				covidtest,
+				date_time,
+				admission,
+				symptoms,
+				covidtestresult,
 				status,
-				notes
+				notes,
+				prescription,
+				total_cost
 			) => {
+				const store = getStore();
 				const response = await fetch(`${listocareBackendUrl}/diagnostic`, {
 					method: "POST",
 					headers: {
-						"Content-Type": "application/json"
+						"Content-Type": "application/json",
+						Authorization: `Bearer ${store.token}`
 					},
 					body: JSON.stringify({
-						Patientid,
+						patient_id,
+						treatment_id,
 						name,
+						date_time,
+						admission,
+						symptoms,
 						covidtestresult,
-						date,
-						hospital,
-						room,
-						covidtest,
 						status,
-						notes
+						notes,
+						prescription,
+						total_cost
 					})
 				});
 				if (response.ok) {
@@ -152,28 +155,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return false;
 				}
 			},
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-			changeColor: (index, color) => {
-				//get the store
+			getPatients: async () => {
 				const store = getStore();
-
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
+				const response = await fetch(`${listocareBackendUrl}/patient`, {
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+						Authorization: `Bearer ${store.token}`
+					}
 				});
-
-				//reset the global store
-				setStore({ demo: demo });
+				let patients = await response.json();
+				if (response.ok) {
+					setStore({
+						patients
+					});
+					return true;
+				} else {
+					console.log(response.statusText);
+					return false;
+				}
+			},
+			restoreStore: () => {
+				setStore(JSON.parse(localStorage.getItem("session")));
 			}
 		}
 	};
