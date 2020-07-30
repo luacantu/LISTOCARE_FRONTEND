@@ -3,7 +3,7 @@ import React, { useState, Effect } from "react";
 export const Patients = () => {
 	const [id, setid] = useState(null);
 	const [Fecha, setFecha] = useState(null);
-	const [PrimerNombre, setPrimerNombre] = useState(null);
+	const [Nombre, setNombre] = useState(null);
 	const [Apellido, setApellido] = useState(null);
 	const [FechaDeNacimiento, setFechaDeNacimiento] = useState(null);
 	const [Genero, setGenero] = useState(null);
@@ -114,8 +114,29 @@ export const Patients = () => {
 									/>
 								</div>
 							</div>
-							<button type="button" className="btn btn-danger btn-lg px-5 my-3">
-								Submit
+
+							<button
+								onClick={async () => {
+									let success = await actions.Patients(
+										id,
+										Fecha,
+										Nombre,
+										Apellido,
+										FechaDeNacimiento,
+										Genero,
+										Direccion,
+										NumeroTelefonico,
+										NumeroDeIdentificacion
+									);
+									if (success) {
+										history.push("/sign_in");
+									} else {
+										alert("something went wrong, please try again");
+									}
+								}}
+								type="button"
+								className="btn btn-danger btn-lg px-5 my-3">
+								Aceptar
 							</button>
 						</form>
 					</div>

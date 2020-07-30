@@ -9,7 +9,6 @@ export const Treatment = () => {
 	const [Name, setName] = useState(null);
 	const [Date, setDate] = useState(null);
 	const [Hospital, setHospital] = useState(null);
-	// const [PhoneNumber, setPhoneNumber] = useState(null);
 	const [Room, setRoom] = useState(null);
 	const [Status, setStatus] = useState(null);
 	const [Covidtest, setCovidtest] = useState(null);
@@ -19,7 +18,7 @@ export const Treatment = () => {
 			<h1>Tratamiento</h1>
 			<div className="treatment">
 				<div className="Diagnostic d-flex justify-content-center">
-					<form className="treatment-form text-center">
+					<form className="treatment-form text-center bg-white">
 						<div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg">
 							<div className="col-10">
 								<div className="form-group" />
@@ -54,7 +53,7 @@ export const Treatment = () => {
 							<div className="col-10">
 								<textarea
 									className="form-control"
-									onChange={e => setDoctorid(e.target.value)}
+									onChange={e => setDiagnostic(e.target.value)}
 									type="text"
 									placeholder="Diagnostico"
 								/>
@@ -65,22 +64,7 @@ export const Treatment = () => {
 							<div className="col-10">
 								<input
 									className="form-control"
-<<<<<<< HEAD
 									onChange={e => setDate(e.target.value)}
-=======
-									onChange={e => setName(e.target.value)}
-									type="text"
-									placeholder="Nombre"
-								/>
-							</div>
-						</div>
-
-						<div className="form-group">
-							<div className="col">
-								<textarea
-									className="form-control"
-									onChange={e => setStatus(e.target.value)}
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 									type="text"
 									placeholder="Fecha"
 								/>
@@ -93,11 +77,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setName(e.target.value)}
 									type="text"
-<<<<<<< HEAD
 									placeholder="Nombre"
-=======
-									placeholder="Direccion"
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -108,11 +88,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setStatus(e.target.value)}
 									type="text"
-<<<<<<< HEAD
 									placeholder="Status"
-=======
-									placeholder="Numero de telefono"
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -123,11 +99,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setHospital(e.target.value)}
 									type="text"
-<<<<<<< HEAD
 									placeholder="Hospital"
-=======
-									placeholder="Numero de habitacion"
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -148,11 +120,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setRoom(e.target.value)}
 									type="text"
-<<<<<<< HEAD
 									placeholder="Habitacion"
-=======
-									placeholder="Fecha"
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>
@@ -163,11 +131,7 @@ export const Treatment = () => {
 									className="form-control"
 									onChange={e => setNotes(e.target.value)}
 									type="text"
-<<<<<<< HEAD
 									placeholder="Notes"
-=======
-									placeholder="Comentario"
->>>>>>> 02b67741c98145d193a199c3f490071781cbb12c
 								/>
 							</div>
 						</div>

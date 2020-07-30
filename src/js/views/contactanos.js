@@ -29,7 +29,7 @@ export const Contactanos = () => {
 			{/* <div className="row py-4 px-3">
 				<h2>lo que ofrecemos</h2>
 			</div> */}
-			<div id="contact" className="container-fluid bg-grey">
+			<div id="contactw" className="container-fluid bg-grey">
 				<h2 className="text-center">Contactanos</h2>
 				<div id="contactus" className="row">
 					<div id="texta" className="col-md-5 text-center">

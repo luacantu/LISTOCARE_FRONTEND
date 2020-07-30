@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { logo1 } from "../../img/logo1.png";
+import trns from "../../img/trns.jpg";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<img src="https://ibb.co/2WkTZLt" />
+		<nav className="navbar navbar-light bg-light">
+			<img src={trns} className="logo" />
 
 			<div className="ml-auto">
 				<Link to="/sign_in">

@@ -6,10 +6,10 @@ body{
     //  background-image: url("https://wallpaperplay.com/walls/full/2/4/b/176845.jpg");
 }
 
-.navbar .img{
-    height: 90px;
-    background-color:white;
-    border:2px
+.logo{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; 
 }
 .navbar .brand{
     position: absolute;
@@ -22,12 +22,29 @@ body{
 }
 
 .navbar button{
-    color: darkgray;
+    background-color: rgb(11, 103, 116);
+    color: rgb(255, 246, 246);
     font-size: 1.2rem;
     padding: 8px;
     border-radius: 10px;
+    
+}
+.row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 540px;
+    padding: 30px;
+}
+.text-center{
+    color:rgb(11, 103, 116);
 }
 
+}
+.contactw{
+    background-color: grey;
+}
 .entry-button{
     background-color : rgb(185, 47, 47);
     color: white;
@@ -35,8 +52,6 @@ body{
     padding: 8px;
     font-size: 1.2rem;
     border-radius: 10px;
-    
-    
 }
 .contact{
     padding:300px;
@@ -78,6 +93,7 @@ body{
     border-radius: 20px;
 
 }
+
 .phone{
     z-index: 10000;
     height: 30rem;
