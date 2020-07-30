@@ -1,24 +1,32 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, Redirect } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Home = () => {
+	const { store, actions } = useContext(Context);
 	return (
-		<div className="home_bg">
-			<div className="home">
-				<Link to="/staff_info">
-					<div>INFORMACION DEL MEDICO</div>
-				</Link>
-				<Link to="/treatment">
-					<div>TRATAMINETO</div>
-				</Link>
-				<Link to="/patients">
-					<div>PACIENTE</div>
-				</Link>
+		<>
+			{store.token ? (
+				<div className="home_bg">
+					<div className="home">
+						<Link to="/staff_info">
+							<div>INFORMACION DEL MEDICO</div>
+						</Link>
+						<Link to="/treatment">
+							<div>TRATAMINETO</div>
+						</Link>
+						<Link to="/patients">
+							<div>PACIENTE</div>
+						</Link>
 
-				<Link to="/Diagnostic">
-					<div>DIAGNOSTICO</div>
-				</Link>
-			</div>
-		</div>
+						<Link to="/Diagnostic">
+							<div>DIAGNOSTICO</div>
+						</Link>
+					</div>
+				</div>
+			) : (
+				<Redirect to={"/contactanos"} />
+			)}
+		</>
 	);
 };

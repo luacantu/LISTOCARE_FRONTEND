@@ -1,10 +1,12 @@
-import React, { useState, Effect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
+import { useHistory } from "react-router-dom";
 export const Log_in = () => {
 	const { store, actions } = useContext(Context);
 	const [email, setEmail] = useState(null);
 	const [nombreDeUsuario, setNombreDeUsuario] = useState(null);
 	const [contraseña, setContraseña] = useState(null);
+	const history = useHistory();
 	return (
 		<div className="Log_title">
 			<h1>Log in</h1>
@@ -44,7 +46,14 @@ export const Log_in = () => {
 								</div>
 
 								<button
-									onClick={async () => actions.login(email, contraseña)}
+									onClick={async () => {
+										let success = await actions.login(email, contraseña);
+										if (success) {
+											history.push("/home");
+										} else {
+											alert("Por favor, intente de nuevo.");
+										}
+									}}
 									type="button"
 									className="btn btn-danger btn-lg px-5 my-3">
 									Log in

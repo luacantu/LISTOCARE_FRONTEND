@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import getState from "./flux.js";
 
 // Don't change, here is where we initialize our context, by default it's just going to be null.
@@ -13,15 +13,19 @@ const injectContext = PassedComponent => {
 			getState({
 				getStore: () => state.store,
 				getActions: () => state.actions,
-				setStore: updatedStore =>
+				setStore: updatedStore => {
+					localStorage.setItem("session", JSON.stringify(Object.assign(state.store, updatedStore)));
 					setState({
 						store: Object.assign(state.store, updatedStore),
 						actions: { ...state.actions }
-					})
+					});
+				}
 			})
 		);
-
+		const firstLoadOver = useRef(false);
 		useEffect(() => {
+			state.actions.restoreStore();
+
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime
