@@ -55,7 +55,7 @@ export const Didagnostic = () => {
 					<div className="Diagnos_bg">
 						<div className="Diagnostic d-flex justify-content-center ">
 							<div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg">
-								<form className="col-10">
+								<form id="diag" className="col-10">
 									<div className="form-group">
 										<div className="col-10">
 											<select

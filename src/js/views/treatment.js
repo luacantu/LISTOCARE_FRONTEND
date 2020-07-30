@@ -40,7 +40,7 @@ export const Treatment = () => {
 					<h1>Tratamiento</h1>
 					<div className="treatment">
 						<div className="Diagnostic d-flex justify-content-center">
-							<form className="treatment-form text-center bg-white">
+							<form className="treatment-form text-center bg-white w-50 my-3 rounded-lg">
 								{/* <div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg"> */}
 								{/* <div className="col-10">
 								<div className="form-group" />

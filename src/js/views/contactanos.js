@@ -24,13 +24,16 @@ export const Contactanos = () => {
 			<div className="phone" />
 			<div className="lastdiv" />
 			<div className="somos" />
+			<div className="doc" />
 			<div className="servicios" />
-			<div className="video" />
+			<div className="covid19" />
 			{/* <div className="row py-4 px-3">
 				<h2>lo que ofrecemos</h2>
 			</div> */}
 			<div id="contactw" className="container-fluid bg-grey">
-				<h2 className="text-center">Contactanos</h2>
+				<h2 id="contitle" className="text-center">
+					Contactanos
+				</h2>
 				<div id="contactus" className="row">
 					<div id="texta" className="col-md-5 text-center">
 						<p>Nuestro Servicio al cliente esta trabajando 24/7 para ti</p>

@@ -29,22 +29,27 @@ body{
     border-radius: 10px;
     
 }
-// .row{
-//     display: flex;
-//     -ms-flex-wrap: wrap;
-//     flex-wrap: wrap;
-//     margin-right: -15px;
-//     margin-left: 540px;
-//     padding: 30px;
-// }
-.text-center{
+.row,.contactus{
+    display: flex;
+    margin-right: -2100px;
+    margin-left: -15px;
+    background-color: rgb(219, 207, 207);
+}
+.col-8{
+    margin-top: 50px;
+}
+.diag.col-10{
+    margin-top: 50px;
+}
+.contitle,.text-center{
     color:rgb(11, 103, 116);
+    background-color: rgb(219, 207, 207);
 }
 
-
-.contactw{
+.contactw,.container-fluid{
     background-color: grey;
 }
+
 .entry-button{
     background-color : rgb(185, 47, 47);
     color: white;
@@ -107,7 +112,7 @@ body{
     top:50%;
     right:0;
     // margin-left: 1250px;
-    transform:translate(-20%,-220%);
+    transform:translate(-20%,-320%);
 }
 .lastdiv{
     background-color:blue;
@@ -121,6 +126,22 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
+}
+.covid19{
+    background-image: url("../img/COVID19.png");
+     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem; 
+}
+.doc{
+    background-image: url("../img/VERDE.png");
+     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;  
 }
 .servicios{
     background-image: url("../img/3.png");
@@ -251,8 +272,8 @@ input{
     background: white;
     border:1px solid lightblue;
     color: rgb(103, 132, 219);
-    width: 500px;
-    height: 80px;
+    width: 700px;
+    height: 300px;
     margin: 20px auto;
     justify-content: center;
     font-size: 2rem;
@@ -301,6 +322,7 @@ input{
 }
 .home_bg{
     background-color: lightblue;
+
 }
 .patient_bg{
     background-color: lightblue;

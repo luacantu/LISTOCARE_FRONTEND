@@ -10,15 +10,14 @@ export const Home = () => {
 				<div className="home_bg">
 					<div className="home">
 						<Link to="/staff_info">
-							<div>INFORMACION DEL MEDICO</div>
-						</Link>
-						<Link to="/treatment">
-							<div>TRATAMINETO</div>
+							<div>REGISTRACION</div>
 						</Link>
 						<Link to="/patients">
 							<div>PACIENTE</div>
 						</Link>
-
+						<Link to="/treatment">
+							<div>TRATAMIENTO</div>
+						</Link>
 						<Link to="/Diagnostic">
 							<div>DIAGNOSTICO</div>
 						</Link>

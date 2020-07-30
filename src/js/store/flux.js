@@ -1,5 +1,5 @@
 // aquí va el backend url
-const listocareBackendUrl = "https://3000-b7e42043-27ab-40e8-9e7b-2ac184327677.ws-us02.gitpod.io/";
+const listocareBackendUrl = "https://3000-b1d365b1-d185-401b-80db-65921a6247bf.ws-us02.gitpod.io/";
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {

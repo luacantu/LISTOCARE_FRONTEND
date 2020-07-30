@@ -6,19 +6,18 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light">
 			<img src={trns} className="logo" />
-
 			<div className="ml-auto">
 				<Link to="/sign_in">
 					<span className="entry-button">Ingresa</span>
 				</Link>
-				{/* <Link to="/demo">
-					<button className="productos">Productos</button>
-				</Link>{" "} */}
 				<Link to="/home">
 					<button className="listocare">Cuenta Online</button>
 				</Link>
 				<Link to="/demo">
-					<button className="contactanos">Contacto</button>
+					<button className="contactanos">Somos</button>
+				</Link>
+				<Link to="/log-in">
+					<button className="logout">Logout</button>
 				</Link>
 			</div>
 		</nav>
