@@ -19,15 +19,15 @@ export const Treatment = () => {
 			<div className="treatment">
 				<div className="Diagnostic d-flex justify-content-center">
 					<form className="treatment-form text-center bg-white">
-						<div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg">
-							<div className="col-10">
+						{/* <div className="d-flex justify-content-center w-50 my-3 bg-white rounded-lg"> */}
+						{/* <div className="col-10">
 								<div className="form-group" />
 
 								<input className="form-control" type="text" value="ID" />
 							</div>
-						</div>
+						</div> */}
 
-						<div className="form-group">
+						{/* <div className="form-group">
 							<div className="col-10">
 								<input
 									className="form-control"
@@ -36,7 +36,7 @@ export const Treatment = () => {
 									placeholder="ID del doctor"
 								/>
 							</div>
-						</div>
+						</div> */}
 
 						<div className="form-group">
 							<div className="col-10">

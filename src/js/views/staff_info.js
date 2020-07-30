@@ -41,7 +41,7 @@ export const Staff_info = () => {
 								</div>
 							</div>
 
-							<div className="form-group">
+							{/* <div className="form-group">
 								<div className="col-30">
 									<input
 										className="form-control"
@@ -50,9 +50,9 @@ export const Staff_info = () => {
 										placeholder="ID"
 									/>
 								</div>
-							</div>
+							</div> */}
 
-							<div className="form-group">
+							{/* <div className="form-group">
 								<div className="col-30">
 									<input
 										className="form-control"
@@ -61,7 +61,7 @@ export const Staff_info = () => {
 										placeholder="Contraseña"
 									/>
 								</div>
-							</div>
+							</div> */}
 
 							<div className="form-group">
 								<div className="col-30">
@@ -74,7 +74,7 @@ export const Staff_info = () => {
 								</div>
 							</div>
 
-							<div className="form-group">
+							{/* <div className="form-group">
 								<div className="col-30">
 									<input
 										className="form-control"
@@ -83,7 +83,7 @@ export const Staff_info = () => {
 										placeholder="Email"
 									/>
 								</div>
-							</div>
+							</div> */}
 
 							<div className="form-group">
 								<div className="col-30">
