@@ -211,8 +211,9 @@ top:80px;
     margin-left:500px;
     padding:20px;
 }
-.Submit{
-    margin-left: 1160px;
+.submit{
+    text-align: center;
+    margin-left: 200px;
     background-color: red;
     color: white;
     display:flex;
@@ -353,4 +354,7 @@ input{
 .Diagnostic_title{
     text-align: center;
     color: red;
+}
+.col{
+    margin-right: 2000px;
 }

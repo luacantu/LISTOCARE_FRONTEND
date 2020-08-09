@@ -11,7 +11,7 @@ export const Navbar = () => {
 					<span className="entry-button">Ingresa</span>
 				</Link>
 				<Link to="/home">
-					<button className="listocare">Cuenta Online</button>
+					<button className="contactanos">Cuenta Online</button>
 				</Link>
 				<Link to="/demo">
 					<button className="contactanos">Somos</button>
